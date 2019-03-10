@@ -1,0 +1,31 @@
+{
+  "name": "e2e-horchata-app",
+  "version": "1.0.0",
+  "description": "Código de la app para charla de e2e/automated testing, Horchata JS, 9 de Marzo 2019.",
+  "main": "server/index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "start": "node ./server/index",
+    "test": "mocha ./tests/unit/*.test.js",
+    "e2e": "testcafe chrome ./tests/e2e/*.test.js",
+    "e2e-lento": "testcafe chrome --speed 0.5 ./tests/e2e/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieguito151/e2e-horchata-app.git"
+  },
+  "author": "Luis Diego Hernandez - github.com/dieguito151",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieguito151/e2e-horchata-app/issues"
+  },
+  "homepage": "https://github.com/dieguito151/e2e-horchata-app#readme"
+}
